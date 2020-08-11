@@ -93,6 +93,22 @@
   background: var(--color-secondary-dark);
 }
 
+#search-teachers .btn_search {
+  border: none;
+  background: var(--color-secondary);
+  color: var(--color-button-text);
+  width: 100%;
+  margin-top: 20px;
+  padding: 1.4rem ;
+  cursor: pointer;
+  border-radius: .8rem;
+}
+
+#search-teachers .btn_search:hover {
+  background: var(--color-secondary-dark);
+}
+
+
 @media (min-width: 700px) {
   #page-teacher-list {
     max-width: 100%;
@@ -100,15 +116,20 @@
 
   #search-teachers {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 16px;
     position: absolute;
     bottom: -28px;
+    align-items: flex-end;
   }
 
   #search-teachers .input-block + .input-block,
   #search-teachers .select-block + .select-block {
     margin-top: 0;
+  }
+
+  #search-teachers .btn_search {
+    height: 45px;
   }
 
   #page-teacher-list main {
